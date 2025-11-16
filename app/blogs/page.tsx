@@ -4,12 +4,11 @@ import { getBlogsMetaData } from "../lib/mdx";
 import Link from "next/link";
 
 export default async function Blogs() {
-  const blogMetaData = await getBlogsMetaData();
-  if (!blogMetaData || blogMetaData.length === 0) {
+  return (
     <div className="flex flex-col text-md gap-9 w-full tracking-tight ">
       <div className="w-full aspect-video lg:aspect-2/1 relative">
         <Image alt="bg" fill src="/aesthetic.jpg" />
-      </div>{" "}
+      </div>
       <div className="flex flex-col gap-2">
         <div className="text-neutral-300 leading-5">
           This section will be updated when i start writing blogs :)
@@ -23,7 +22,11 @@ export default async function Blogs() {
           </ArrowOnHover>
         </div>
       </div>
-    </div>;
+    </div>
+  );
+  const blogMetaData = await getBlogsMetaData();
+  console.log("divyansh works");
+  if (!blogMetaData || blogMetaData.length === 0) {
   }
   return (
     <div>
@@ -35,7 +38,7 @@ export default async function Blogs() {
           <div key={index}>
             <Link href={`/blogs/${blog.slug}`}>{blog.frontmatter.title}</Link>
             <div className="w-full flex justify-between">
-              <div className="flex gap-4">
+              <div className="flex gap-4w">
                 <div>{blog.frontmatter.author}</div>
                 <div>{blog.frontmatter.readTime}</div>
               </div>

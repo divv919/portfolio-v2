@@ -3,5 +3,5 @@ export default function BlogsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="prose prose-invert ">{children}</div>;
+  return <div className="w-full prose prose-invert">{children}</div>;
 }
