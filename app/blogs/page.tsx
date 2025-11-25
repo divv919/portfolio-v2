@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default async function Blogs() {
   return (
-    <div className="flex flex-col text-md gap-9 w-full tracking-tight ">
+    <div className="flex flex-col text-md gap-15 w-full tracking-tight ">
       <div className="w-full aspect-video lg:aspect-2/1 relative">
         <Image alt="bg" fill src="/aesthetic.jpg" />
       </div>
@@ -16,9 +16,7 @@ export default async function Blogs() {
         <div className="text-neutral-400 flex gap-2">
           Till then follow me on{" "}
           <ArrowOnHover href="https://x.com/divv919">
-            <span className="border-b border-neutral-600 border-dotted">
-              x.com
-            </span>
+            <span className="">x.com</span>
           </ArrowOnHover>
         </div>
       </div>

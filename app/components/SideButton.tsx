@@ -10,7 +10,7 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { cn } from "../lib/util";
-import { AnimatePresence, easeInOut, motion } from "motion/react";
+import { AnimatePresence, easeInOut, easeOut, motion } from "motion/react";
 import ArrowOnHover from "./ArrowOnHover";
 import GlassUser from "./icons/glass/GlassUser";
 import GlassFeather from "./icons/glass/GlassFeather";
@@ -52,14 +52,18 @@ export function SideButton() {
   };
   const hoverVariants = {
     active: {
-      x: 13,
-      opacity: 1,
-      transition: { duration: 0.2, ease: easeInOut },
+      x: [0, 9, 13],
+      opacity: [0, 0.6, 1],
+      transition: {
+        duration: 0.4,
+        ease: [easeOut, easeOut, easeOut],
+        times: [0, 0.2, 1],
+      },
     },
     inactive: {
       x: 0,
       opacity: 0,
-      transition: { duration: 0.2, ease: easeInOut },
+      transition: { duration: 0.4, ease: easeInOut },
     },
   };
 
@@ -96,7 +100,7 @@ export function SideButton() {
 
             <motion.p>{btn}</motion.p>
 
-            <motion.div className="relative w-5 h-5 flex items-center justify-center ">
+            <motion.div className="relative w-5 h-5 flex items-center justify-center z-10">
               {btn === "About" ? (
                 <GlassUser />
               ) : btn === "Blogs" ? (
@@ -109,7 +113,7 @@ export function SideButton() {
               <motion.div
                 variants={hoverVariants}
                 className="absolute right-5   text-neutral-500"
-                transition={{ duration: 0.2, ease: "easeInOut" }}
+                // transition={{ duration: 0.4, ease: "easeInOut" }}
               >
                 <ChevronRight />
               </motion.div>

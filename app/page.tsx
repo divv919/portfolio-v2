@@ -16,7 +16,9 @@ export default function Home() {
         <div className="text-neutral-400/90 md:text-neutral-400   md:tracking-tight font-inter flex flex-col gap-2 md:gap-3 text-[15px] md:text-md  leading-[1.3]">
           <p>
             Passionate builder, creating frontends, scalable backends and
-            services. Interested in UI/UX, GenAI and Agent development,
+            services.
+            <br /> Has a good eye for designs, interested in GenAI and Agent
+            development, <br />
             Full-stack and Devops.
           </p>
           <p>

@@ -64,14 +64,14 @@ export default function RootLayout({
           {/* Your Content/Components */}
           <SideButtonMobile />
           <TopBottomMasks />
-          <div className="flex  min-h-screen items-center justify-center max-w-[2000px] mx-auto   relative font-sans bg-transparent ">
+          <div className="flex  min-h-screen  items-center justify-center max-w-[1500px]  mx-auto   relative font-sans bg-transparent ">
             {/* <div className="h-full w-full absolute bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_40%,rgba(0,0,0,0.3)_100%)]  ">
             <div className="w-full h-full bg-[repeating-linear-gradient(90deg,gray_0_2px,_transparent_1px_30px)] opacity-5  ">
               <div className="w-full h-full bg-[repeating-linear-gradient(0deg,gray_0_2px,_transparent_1px_30px)] "></div>
             </div>
           </div> */}
 
-            <div className="w-full xl:w-[50%] md:w-[65%] lg:w-[60%]  flex flex-col gap-2 items-start shadow-white/5 shadow-inner relative  bg-neutral-950 backdrop-blur-3xl justify-start min-h-screen my-30 p-10  border    border-dashed  border-neutral-800">
+            <div className="w-full xl:w-[45%] md:w-[65%] lg:w-[60%]  flex flex-col gap-2 items-start shadow-white/5 shadow-inner relative  bg-neutral-950 backdrop-blur-3xl justify-start min-h-screen my-[150px] p-10  border    border-dashed  border-neutral-800">
               <SideButton />
               <Indicator />
               <TopButton />

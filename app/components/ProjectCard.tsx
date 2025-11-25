@@ -14,21 +14,24 @@ import { easeIn, easeInOut, easeOut, motion, spring } from "motion/react";
 export default function ProjectCard({ project }: { project: Project }) {
   const containerVariant = {
     hover: {
-      scale: 1.04,
+      scale: [1, 1.035, 1.05],
       transition: {
-        type: spring,
-        stiffness: 80,
-        damping: 12,
-        mass: 1.2,
+        duration: 0.4,
+        times: [0, 0.15, 1],
+        ease: [easeOut, easeOut],
+
+        // type: spring,
+        // stiffness: 100,
+        // damping: 10,
+        // mass: 1,
       },
     },
     rest: {
-      scale: 1,
+      scale: [1.05, 1.02, 1],
       transition: {
-        type: spring,
-        stiffness: 80,
-        damping: 12,
-        mass: 1.2,
+        duration: 0.4,
+        times: [0, 0.2, 1],
+        ease: [easeOut, easeOut],
       },
     },
   };
@@ -43,30 +46,42 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   const titleVariant = {
     hover: {
-      opacity: 1,
+      opacity: [0, 0.6, 1],
+      translateY: [8, 3, 0],
+
       transition: {
-        delay: 0.2,
+        // delay: 0.2,
+        times: [0, 0.15, 1],
       },
-      translateY: 0,
     },
     rest: {
-      opacity: 0,
-      translateY: 10,
+      opacity: [1, 0.4, 0],
+      translateY: [0, 5, 8],
+      transition: {
+        // delay: 0.2,
+        times: [0, 0.15, 1],
+      },
     },
   };
 
   const descriptionVariant = {
     hover: {
-      opacity: 1,
+      opacity: [0, 0.6, 1],
+      translateY: [8, 4, 0],
+
       transition: {
-        delay: 0.3,
+        // delay: 0.3,
+        times: [0, 0.15, 1],
       },
-      translateY: 0,
     },
     rest: {
-      translateY: 10,
+      translateY: [0, 5, 8],
 
-      opacity: 0,
+      opacity: [1, 0.4, 0],
+      transition: {
+        // delay: 0.2,
+        times: [0, 0.15, 1],
+      },
     },
   };
   return (
@@ -76,7 +91,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         whileHover={"hover"}
         animate={"rest"}
         initial={"rest"}
-        className="w-full aspect-2/1 relative overflow-hidden rounded-md "
+        className="w-full aspect-2/1 relative overflow-hidden rounded-2xl "
       >
         <motion.div
           variants={parentVariant}
@@ -84,7 +99,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         >
           <motion.div
             variants={titleVariant}
-            className="flex text-neutral-200  tracking-tight text-[20px] font-inter gap-4 items-center"
+            className="flex text-neutral-200  tracking-tight text-[17px] font-inter gap-4 items-center"
           >
             <motion.div>{project.title}</motion.div>
             <motion.div className="gap-2 flex items-center">
@@ -98,7 +113,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           </motion.div>
           <motion.div
             variants={descriptionVariant}
-            className="text-neutral-400 text-sm max-w-[70%]"
+            className="text-neutral-400 text-[12px] max-w-[70%]"
           >
             <DescriptionWithTags description={project.description} />
           </motion.div>
@@ -144,13 +159,13 @@ const wordsToTag = [
 ];
 function DescriptionWithTags({ description }: { description: string }) {
   return (
-    <div className="text-sm text-neutral-400 md:text-base  tracking-tight flex gap-x-1 flex-wrap">
+    <div className="text-[12px] text-neutral-400 md:text-[14px]  tracking-tight flex gap-x-1 flex-wrap">
       {description.split(" ").map((word, index) => {
         if (wordsToTag.includes(word)) {
           return (
             <div
               key={index}
-              className="text-xs border border-neutral-800 rounded-md w-fit px-[4px] py-[2px] bg-neutral-900"
+              className="text-[12px] border border-neutral-800 rounded-md w-fit px-[4px] py-[2px] bg-neutral-900"
             >
               {word}
             </div>
