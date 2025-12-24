@@ -30,6 +30,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Portfolio - Divyansh Swarnkar",
   description: "Portfolio - Divyansh Swarnkar",
+  openGraph: {
+    type: "website",
+    title: "Portfolio - Divyansh Swarnkar",
+    description: "Showcasing all my work and skills",
+    url: "https://divyanshh.tech",
+    siteName: "Divyansh Swarnkar",
+    images: [
+      {
+        url: "/preview.png",
+        alt: "Preview Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio - Divyansh Swarnkar",
+    description: "Showcasing all my work and skills",
+    images: ["/preview.png"],
+  },
 };
 
 export default function RootLayout({

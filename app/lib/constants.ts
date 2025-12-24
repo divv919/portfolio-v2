@@ -10,12 +10,12 @@ export const ButtonInfo = [
 
 export const projects = [
   {
-    title: "Excalidraw",
+    title: "DrawSpace",
     description:
       "Real time and collaborative drawing board as well as shapes functionalities, built using Typescript , Websockets , Next.js and Express",
-    githubLink: "https://github.com/divv919/excalidraw",
-    liveLink: "https://github.com/divv919/excalidraw",
-    imageLink: "/excalidraw2.png",
+    githubLink: "https://github.com/divv919/DrawSpace",
+    liveLink: "https://drawspace.divyanshh.tech/",
+    imageLink: "/drawspace2.png",
   },
   {
     title: "Second Brain",

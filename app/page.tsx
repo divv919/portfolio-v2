@@ -120,7 +120,10 @@ export default function Home() {
           </ArrowOnHover>
 
           <p className="text-sm text-neutral-400 tracking-tight font-inter">
-            AI Engineer Intern (Present)
+            AI Engineer Intern
+          </p>
+          <p className="text-xs text-neutral-500 tracking-tight font-inter">
+            Nov 2025 - Dec 2025
           </p>
         </div>
       </div>
