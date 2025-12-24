@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Divyansh Swarnkar",
     images: [
       {
-        url: "/preview.png",
+        url: "/preview2.png",
         alt: "Preview Image",
       },
     ],
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Portfolio - Divyansh Swarnkar",
     description: "Showcasing all my work and skills",
-    images: ["/preview.png"],
+    images: ["/preview2.png"],
   },
 };
 
