@@ -123,7 +123,7 @@ export default function Home() {
             AI Engineer Intern
           </p>
           <p className="text-xs text-neutral-500 tracking-tight font-inter">
-            Nov 2025 - Dec 2025
+            Oct 2025 - Nov 2025
           </p>
         </div>
       </div>
