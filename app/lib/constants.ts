@@ -15,7 +15,7 @@ export const projects = [
       "Real time and collaborative drawing board as well as shapes functionalities, built using Typescript , Websockets , Next.js and Express",
     githubLink: "https://github.com/divv919/DrawSpace",
     liveLink: "https://drawspace.divyanshh.tech/",
-    imageLink: "/drawspace3.png",
+    imageLink: "/drawspace6.png",
   },
   {
     title: "Second Brain",
