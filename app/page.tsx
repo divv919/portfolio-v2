@@ -144,7 +144,7 @@ export default function Home() {
           </div>
           <div className="text-md text-neutral-300 tracking-tight font-inter flex gap-1">
             <span className="text-neutral-400">Download my </span>
-            <ArrowOnHover href="https://drive.google.com/file/d/1WauLDwLvvN83qLMuJ-UTR4bGYp1cSy8y/view?usp=sharing">
+            <ArrowOnHover href="https://drive.google.com/file/d/1ljNLUYETd8tIS5Q_aAU6mBVMwqQFMtYG/view?usp=sharing">
               <span className="border-dotted border-neutral-600 cursor-pointer border-b hover:border-neutral-500 transition-colors duration-200">
                 resume
               </span>
