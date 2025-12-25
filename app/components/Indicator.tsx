@@ -3,7 +3,7 @@ import { MessageCircleCode } from "lucide-react";
 import { motion } from "motion/react";
 export default function Indicator() {
   return (
-    <div className="h-15 w-45 md:w-60   absolute top-0 left-0 -translate-y-full overflow-hidden ">
+    <div className="h-14 md:h-15 w-40 md:w-60   absolute top-0 left-0 -translate-y-full overflow-hidden ">
       <motion.div
         animate={{ top: "55%" }}
         whileHover={{ top: "10%" }}

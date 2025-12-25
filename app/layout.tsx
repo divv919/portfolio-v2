@@ -90,7 +90,7 @@ export default function RootLayout({
             </div>
           </div> */}
 
-            <div className="w-full xl:w-[45%] md:w-[65%] lg:w-[60%]  flex flex-col gap-2 items-start shadow-white/5 shadow-inner relative  bg-neutral-950 backdrop-blur-3xl justify-start min-h-screen my-[150px] p-10  border    border-dashed  border-neutral-800">
+            <div className="w-full xl:w-[45%] md:w-[65%] lg:w-[60%]  flex flex-col gap-2 items-start shadow-white/5 shadow-inner relative  bg-neutral-950 backdrop-blur-3xl justify-start min-h-screen my-[110px] md:my-[150px] p-6 md:p-10  border    border-dashed  border-neutral-800">
               <SideButton />
               <Indicator />
               <TopButton />
