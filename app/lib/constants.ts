@@ -15,7 +15,7 @@ export const projects = [
       "Real time and collaborative drawing board as well as shapes functionalities, built using Typescript , Websockets , Next.js and Express",
     githubLink: "https://github.com/divv919/DrawSpace",
     liveLink: "https://drawspace.divyanshh.tech/",
-    imageLink: "/drawspace2.png",
+    imageLink: "/drawspace3.png",
   },
   {
     title: "Second Brain",
@@ -23,15 +23,15 @@ export const projects = [
       "Link storage and sharing platform built using the MongoDB , Express , React , Tailwind for responsiveness  ",
     githubLink: "https://github.com/divv919/second-brain",
     liveLink: "https://second-brain-alpha-ebon.vercel.app/",
-    imageLink: "/secondBrain2.png",
+    imageLink: "/secondBrain3.png",
   },
   {
     title: "Jewellery Ecommerce",
     description:
       "Designed and built this ecommerce website using React , Express , PostgreSQL and Sequelize as ORM",
     githubLink: "https://github.com/divv919/jewellery-ecom",
-    liveLink: "https://github.com/divv919/jewellery-ecom",
-    imageLink: "/jewellery2.webp",
+    liveLink: "",
+    imageLink: "/jewellery3.png",
   },
 ];
 

@@ -106,9 +106,11 @@ export default function ProjectCard({ project }: { project: Project }) {
               <Link target="_blank" href={project.githubLink}>
                 <GithubIcon size={18} />
               </Link>
-              <Link target="_blank" href={project.liveLink}>
-                <LinkIcon size={18} />
-              </Link>
+              {project.liveLink.length > 0 && (
+                <Link target="_blank" href={project.liveLink}>
+                  <LinkIcon size={18} />
+                </Link>
+              )}
             </motion.div>
           </motion.div>
           <motion.div
