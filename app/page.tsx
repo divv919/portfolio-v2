@@ -15,10 +15,10 @@ export default function Home() {
         </div>
         <div className="text-neutral-400/90 md:text-neutral-400   md:tracking-tight font-inter flex flex-col gap-2 md:gap-3 text-[15px] md:text-md  leading-[1.3]">
           <p>
-            Passionate builder, creating frontends, scalable backends and
+            Passionate builder, crafting frontends, scalable backends and
             services.
-            <br /> Has a good eye for designs, interested in GenAI and Agent
-            development, <br />
+            <br /> Has a good eye for designs, interested in Harness and Agent
+            Engineering, <br />
             Full-stack and Devops.
           </p>
           <p>
@@ -47,7 +47,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 title={skill.title}
-                className="text-xs cursor-pointer ease-in-out text-neutral-300 w-fit px-3 py-1.5 border border-neutral-700 rounded-full tracking-tight bg-linear-60 from-transparent via-white/10  to-transparent bg-size-[200%_100%] bg-top-left hover:bg-bottom-right transition-all duration-200"
+                className="text-xs cursor-pointer ease-in-out text-neutral-300 w-fit px-3 py-1.5 border border-neutral-800 rounded-full tracking-tight bg-linear-60 from-transparent via-white/10  to-transparent bg-size-[200%_100%] bg-top-left hover:bg-bottom-right transition-all duration-200"
               >
                 {skill.title}
               </a>
@@ -68,7 +68,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 title={skill.title}
-                className="text-xs cursor-pointer ease-in-out text-neutral-300 w-fit px-3 py-1.5 border border-neutral-700 rounded-full tracking-tight bg-linear-60 from-transparent via-white/10  to-transparent bg-size-[200%_100%] bg-top-left hover:bg-bottom-right transition-all duration-200"
+                className="text-xs cursor-pointer ease-in-out text-neutral-300 w-fit px-3 py-1.5 border border-neutral-800 rounded-full tracking-tight bg-linear-60 from-transparent via-white/10  to-transparent bg-size-[200%_100%] bg-top-left hover:bg-bottom-right transition-all duration-200"
               >
                 {skill.title}
               </a>
@@ -89,7 +89,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 title={skill.title}
-                className="text-xs cursor-pointer ease-in-out text-neutral-300 w-fit px-3 py-1.5 border border-neutral-700 rounded-full tracking-tight bg-linear-60 from-transparent via-white/10  to-transparent bg-size-[200%_100%] bg-top-left hover:bg-bottom-right transition-all duration-200"
+                className="text-xs cursor-pointer ease-in-out text-neutral-300 w-fit px-3 py-1.5 border border-neutral-800 rounded-full tracking-tight bg-linear-60 from-transparent via-white/10  to-transparent bg-size-[200%_100%] bg-top-left hover:bg-bottom-right transition-all duration-200"
               >
                 {skill.title}
               </a>
@@ -103,6 +103,29 @@ export default function Home() {
         <h2 className="w-fit text-neutral-300 font-tasa-orbiter tracking-tight font-medium text-md border-b-2 border-dashed border-neutral-700 hover:border-neutral-600 duration-200 ease-out">
           Experience
         </h2>
+        <div className="flex flex-col gap-1">
+          <ArrowOnHover href="https://easemargin.com/">
+            <div className="flex gap-2 items-center">
+              <Image
+                alt="oddly-ai-logo"
+                width={20}
+                height={20}
+                className="size-5"
+                src={"/easemargin-logo.webp"}
+              />
+              <p className="text-md text-neutral-300 tracking-tight font-inter">
+                EaseMargin
+              </p>
+            </div>
+          </ArrowOnHover>
+
+          <p className="text-sm text-neutral-400 tracking-tight font-inter">
+            Full Stack Engineer Intern (Mobile + Web)
+          </p>
+          <p className="text-xs text-neutral-500 tracking-tight font-inter">
+            January 2026 - May 2026
+          </p>
+        </div>
         <div className="flex flex-col gap-1">
           <ArrowOnHover href="https://oddlyai.tech/">
             <div className="flex gap-2 items-center">
@@ -144,7 +167,7 @@ export default function Home() {
           </div>
           <div className="text-md text-neutral-300 tracking-tight font-inter flex gap-1">
             <span className="text-neutral-400">Download my </span>
-            <ArrowOnHover href="https://drive.google.com/file/d/1ljNLUYETd8tIS5Q_aAU6mBVMwqQFMtYG/view?usp=sharing">
+            <ArrowOnHover href="https://drive.google.com/file/d/1ACbo0fjUu_OccdGvMovqQEpjft-hlarv/view?usp=sharing">
               <span className="border-dotted border-neutral-600 cursor-pointer border-b hover:border-neutral-500 transition-colors duration-200">
                 resume
               </span>

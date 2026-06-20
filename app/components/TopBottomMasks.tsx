@@ -13,7 +13,7 @@ export default function TopBottomMasks() {
         ></div>
         {/* Blur layers with smooth mask transitions for flowing blur effect */}
         <div
-          className="absolute inset-0 backdrop-blur-[1px]"
+          className="absolute inset-0"
           style={{
             maskImage:
               "linear-gradient(to bottom, black 0%, black 8%, transparent 25%, transparent 100%)",
@@ -22,7 +22,7 @@ export default function TopBottomMasks() {
           }}
         ></div>
         <div
-          className="absolute inset-0 backdrop-blur-[0.75px]"
+          className="absolute inset-0 "
           style={{
             maskImage:
               "linear-gradient(to bottom, transparent 0%, black 8%, black 20%, transparent 45%, transparent 100%)",
@@ -31,7 +31,7 @@ export default function TopBottomMasks() {
           }}
         ></div>
         <div
-          className="absolute inset-0 backdrop-blur-[0.5px]"
+          className="absolute inset-0 "
           style={{
             maskImage:
               "linear-gradient(to bottom, transparent 0%, transparent 20%, black 35%, transparent 65%, transparent 100%)",
@@ -40,7 +40,7 @@ export default function TopBottomMasks() {
           }}
         ></div>
         <div
-          className="absolute inset-0 backdrop-blur-[0.25px]"
+          className="absolute inset-0 "
           style={{
             maskImage:
               "linear-gradient(to bottom, transparent 0%, transparent 35%, black 50%, transparent 80%, transparent 100%)",
@@ -60,7 +60,7 @@ export default function TopBottomMasks() {
         ></div>
         {/* Blur layers with smooth mask transitions for flowing blur effect */}
         <div
-          className="absolute inset-0 backdrop-blur-[1px]"
+          className="absolute inset"
           style={{
             maskImage:
               "linear-gradient(to top, black 0%, black 8%, transparent 25%, transparent 100%)",
@@ -69,7 +69,7 @@ export default function TopBottomMasks() {
           }}
         ></div>
         <div
-          className="absolute inset-0 backdrop-blur-[0.75px]"
+          className="absolute inset-0 "
           style={{
             maskImage:
               "linear-gradient(to top, transparent 0%, black 8%, black 20%, transparent 45%, transparent 100%)",
@@ -78,7 +78,7 @@ export default function TopBottomMasks() {
           }}
         ></div>
         <div
-          className="absolute inset-0 backdrop-blur-[0.5px]"
+          className="absolute inset-0 "
           style={{
             maskImage:
               "linear-gradient(to top, transparent 0%, transparent 20%, black 35%, transparent 65%, transparent 100%)",
@@ -87,7 +87,7 @@ export default function TopBottomMasks() {
           }}
         ></div>
         <div
-          className="absolute inset-0 backdrop-blur-[0.25px]"
+          className="absolute inset-0 "
           style={{
             maskImage:
               "linear-gradient(to top, transparent 0%, transparent 35%, black 50%, transparent 80%, transparent 100%)",
